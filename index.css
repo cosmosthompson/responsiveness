@@ -1,0 +1,127 @@
+@font-face {
+  src: url(fonts/Poppins-Regular.ttf);
+  font-family: poppins;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  gap: 40px;
+  place-content: center center;
+  margin: 40px 10px;
+}
+
+body {
+  background: url(./images/bg-intro-desktop.png), hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: poppins;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+  color: white;
+}
+
+.flex-container h{
+  font-size: 30px;
+}
+
+h3 p {
+  color: white;
+  font-size: 16px;
+}
+
+.footer {
+  color: hsl(249, 10%, 26%);
+}
+
+.footer span {
+  color: red;
+}
+
+input:required:invalid {
+  outline: none;
+  border: none;
+  border: 1px solid hsl(0, 100%, 74%);
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+}
+
+input:invalid + span {
+  display: inline;
+  color: hsl(0, 100%, 74%);
+  float: right;
+  font-size: 14px;
+}
+
+input:valid {
+  outline: none;
+  border: none;
+  border: 1px solid hsl(154, 59%, 51%);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+.form h4 {
+  text-align: center;
+  background: hsl(248, 32%, 49%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input {
+  height: 40px;
+  padding: 7px 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media all and (max-width: 900px) {
+  main {
+    display: flex;
+    gap: 40px;
+    place-content: center center;
+    flex-direction: column;
+  }
+}
